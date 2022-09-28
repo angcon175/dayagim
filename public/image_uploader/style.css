@@ -1,0 +1,31 @@
+.img-box {
+    position: relative;
+    /* width: 50%; */
+}
+
+.img-fluid {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-box-child {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-box:hover .img-fluid {
+    opacity: 0.5;
+}
+.img-box:hover .img-box-child {
+    opacity: 1;
+}

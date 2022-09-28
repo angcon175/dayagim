@@ -1,0 +1,2 @@
+ALTER TABLE `settings` ADD `facebook` VARCHAR(255) NULL AFTER `measurement_id`, ADD `twitter` VARCHAR(255) NULL AFTER `facebook`, ADD `instagram` VARCHAR(255) NULL AFTER `twitter`, ADD `linkedin` VARCHAR(255) NULL AFTER `instagram`, ADD `youtube` VARCHAR(255) NULL AFTER `linkedin`, ADD `whatsapp` VARCHAR(255) NULL AFTER `youtube`;
+UPDATE `categories` SET `is_show_brand` = '1' WHERE `categories`.`id` = 1;
